@@ -45,5 +45,8 @@ class CalculadoraTest < MiniTest::Test
     calc = Calculadora.new
 
     assert_equal 30, calc.calcular(60, 2, :/)
+    assert_equal 30, calc.calcular(15, 2, :*)
+    assert_equal 30, calc.calcular(32, 2, :-)
+    assert_equal 30, calc.calcular(28, 2, :+)
   end
 end
